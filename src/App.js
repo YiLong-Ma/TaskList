@@ -38,13 +38,13 @@ export default function App() {
   }
   return (
     <div className="App">
-      <h1>Task management app</h1>
+      <h1>List</h1>
+      <List addTodo={addTask} />
       <Assigned
         data={assign}
         toggleFinish={toggleFinish}
         deleteTask={deleteTask}
       />
-      <List addTodo={addTask} />
     </div>
   );
 }
